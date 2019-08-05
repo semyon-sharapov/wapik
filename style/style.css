@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrap{
+    max-width: 1200px;
+    /*padding: 0 73px;*/
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 660px;
+    background: url("../images/bg-head.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    height: 660px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(50,108,109,.8);
+    z-index: 1;
+}
+
+.left-header, .right-header, .top-header{
+    z-index: 2;
+}
+
+.left-header{
+    display: flex;
+    justify-content: start;
+}
+
+.right-header{
+    display: flex;
+    justify-content: end;
+}
+
+.top-header{
+    height: 85px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4c6d6d;
+    justify-content: space-between;
+}
+
+.ul-menu-hd{
+    display: flex;
+}
+
+.logo-header{
+    padding-right: 15px;
+    border-right: 1px solid #4c6d6d;
+}
+
+.telephone-header{
+    display: flex;
+    align-items: center;
+}
+
+.tel-img{
+    margin-left: 15px;
+}
+
+.a-phone, .li-menu-hd > a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.a-phone{
+    margin-left: 5px;
+}
+
+/*.a-phone:hover{
+    color: #6c8182;
+}*/
+
+.li-menu-hd{
+    margin-right: 20px;
+    list-style: none;
+}
+
+.li-menu-hd:last-child{
+    margin-right: 0;
+}
+
+.li-menu-hd > a{
+    padding: 10px;
+}
+
+.li-menu-hd > a:hover{
+    background: #6c8182;
+    border-radius: 5px;
+}
+
+.bottom-header{
+    position: relative;
+    height: 100%;
+}
+
+.block-info-txt{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50%;
+    z-index: 2;
+}
+
+.blk-info-p1, .blk-info-p2{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 21px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.blk-info-p2{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.blk-info-a{
+    padding: 20px 60px;
+    text-align: center;
+    background: #6fb048;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
