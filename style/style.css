@@ -106,6 +106,7 @@ header:after{
 
 .li-menu-hd > a{
     padding: 10px;
+    white-space: nowrap;
 }
 
 .li-menu-hd > a:hover{
@@ -151,4 +152,65 @@ header:after{
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+}
+
+@media (min-width: 768px) and  (max-width: 1200px){
+    .blk-info-p1{
+        font-size: 28px;
+    }
+
+    .block-info-txt{
+        top: 40%;
+        margin: 30px;
+    }
+
+    .top-header{
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+    .top-header{
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    .left-header, .right-header{
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .ul-menu-hd{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .li-menu-hd{
+        margin: 10px;
+    }
+
+    .block-info-txt{
+        width: 70%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .blk-info-p1{
+        font-size: 30px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .blk-info-a{
+       display: block;
+        margin: 0 auto;
+        padding: 15px 35px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 1200px){
+    .top-header{
+        padding-bottom: 0;
+    }
 }
