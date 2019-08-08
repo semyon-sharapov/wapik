@@ -150,7 +150,7 @@ header:after{
     line-height: 20px;
 }
 
-@media (min-width: 768px) and  (max-width: 1200px){
+@media (min-width: 680px) and  (max-width: 1200px){
     .blk-info-p1{
         font-size: 28px;
     }
@@ -219,9 +219,10 @@ header:after{
 
 .top-features{
     text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 15px;
 }
 
 .sp-features, .top-p-ft{
@@ -250,7 +251,7 @@ header:after{
 .bottom-features{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 70px;
 }
 
@@ -279,4 +280,29 @@ header:after{
     color: #83a7a5;
 }
 
+@media (max-width: 982px) and (min-width: 860px){
+    .sp-features{
+        line-height: normal;
+    }
+    .block-bt-ft{
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .block-bt-ft{
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 760px){
+    .block-bt-ft{
+        flex-basis: 100%;
+    }
+
+    .sp-features{
+        line-height: 28px;
+    }
+}
 
